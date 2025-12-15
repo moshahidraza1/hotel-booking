@@ -36,9 +36,10 @@ const Header = () => {
         }
     ]
   return (
-    <div className='relative w-screen h-screen bg-black/5'>
+    <div className='bg-[#FDFCF8] flex flex-col items-center'>
+    <div className='relative w-screen h-screen '>
         <Image src={'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1765779626/Hero1_vtf6aq.jpg'} alt='Hero background' fill className='object-cover' priority/>
-        <div className='absolute inset-5 md:inset-20 border-4 rounded-[30px] border-white/80 z-20'>
+        <div className='absolute inset-5 md:inset-10 lg:inset-20 border-4 rounded-[30px] border-white/80 z-20'>
         <NavBar/>
         <div className='flex flex-col text-left lg:items-center justify-center lg:text-center space-y-4 p-5 bg-linear-to-t from-black/5 via-black/5 to-transparent'>
         <h1 className='text-3xl md:text-5xl font-bold text-black tracking-tight '>Find Your <br/>
@@ -63,11 +64,12 @@ const Header = () => {
         
         <button className='bg-[#9aacbb] hover:bg-neutral-300 rounded-full px-4 py-3 font-semibold text-sm text-black whitespace-nowrap tracking-tighter'>Book Your Stay</button>
         </div>
-        <div className='lg:hidden grid grid-cols-2 bg-white rounded-lg gap-5 p-3 mx-3 absolute bottom-3 items-center text-center md:right-0'>
+        </div>
+    </div>
+    <div className='lg:hidden grid grid-cols-2 w-[80%] md:w-[60%] bg-neutral-200 rounded-lg gap-5 p-3 mx-3 mt-20 items-center text-center md:right-0'>
             {bookingParameters.map((item, index)=>(
-            <div key={item.id} className={`flex items-center gap-3`}>
+            <div key={item.id} className={`flex items-center `}>
             <div className='text-gray-500 bg-black/5 p-2 rounded-full'>{item.icon}</div>
-            {/* <Icon/> */}
             <div className='flex flex-col'>
                 <span className='text-xs font-bold text-black'>{item.title}</span>
                 <span className='text-sm text-gray-500 font-medium'>{item.value}</span>
@@ -77,8 +79,6 @@ const Header = () => {
         </div>))}
         <button className='col-span-2 bg-[#9aacbb] hover:bg-neutral-300 rounded-lg mx-10 px-4 py-3 font-semibold text-sm text-black whitespace-nowrap tracking-tighter '>Book Your Stay</button>
         </div>
-        </div>
-        
     </div>
 
   )
