@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import FeaturedStays from "./components/FeaturedStays";
 import Experience from "./components/Experience";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <Header/>
     <FeaturedStays/>
     <Experience/>
+    <Testimonials/>
     </>
   );
 }
