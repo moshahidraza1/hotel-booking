@@ -30,7 +30,7 @@ const FeaturedStays = () => {
     }
 ]
   return (
-    <section id={'#rooms'} className='w-full py-24 px-6 md:px-20 bg-[#FDFCF8]'>
+    <section id={'rooms'} className='w-full py-24 px-6 md:px-20 bg-[#FDFCF8]'>
 
         <div className='flex flex-col justify-between mt-12 '>
             <div>
