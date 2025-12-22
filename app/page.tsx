@@ -4,6 +4,7 @@ import FeaturedStays from "./components/FeaturedStays";
 import Experience from "./components/Experience";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <Experience/>
     <Testimonials/>
     <FAQ/>
+    <Contact/>
     </>
   );
 }

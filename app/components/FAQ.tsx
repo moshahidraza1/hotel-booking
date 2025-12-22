@@ -1,5 +1,6 @@
 'use client'
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const FAQ = () => {
@@ -55,7 +56,8 @@ const FAQ = () => {
             {/* Contact CTA */}
             <div className='mt-12 text-center'>
                 <p className='text-gray-500 mb-4'>Still have questions?</p>
-                <button className='text-amber-600 font-semibold hover:text-amber-700 transition-colors underline'>Contact Our team</button>
+                <Link
+                href='#contact'  className='text-amber-600 font-semibold hover:text-amber-700 transition-colors underline'>Contact Our team</Link>
             </div>
 
     </section>
