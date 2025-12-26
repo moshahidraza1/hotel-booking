@@ -175,7 +175,7 @@ const Header = () => {
 
            {/* Guest Counter Dropdown */}
            {item.type === 'guests' && openDropdown === item.key && (
-            <div className='absolute top-full  mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 min-w-70 z-50 whitespace-nowrap'>
+            <div className='absolute top-full right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 min-w-70 z-50 whitespace-nowrap'>
                 {/* Adults */}
                 <div className='flex items-center justify-between mb-4'>
                     <div>
@@ -215,7 +215,7 @@ const Header = () => {
                         <button
                         onClick={()=>handleGuestChange('children', 'increment')}
                         disabled={bookingData.children>=10}
-                        className='w-8 h-8 border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors disbled:opacity-50 disabled:cursor-not-allowed'>
+                        className='w-8 h-8 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors disbled:opacity-50 disabled:cursor-not-allowed'>
                             <Plus size={14}/>
                         </button>
                     </div>
@@ -282,7 +282,7 @@ const Header = () => {
 
                     {/* Guest Counter Dropdown for Mobile */}
                     {item.type === 'guests' && openDropdown === item.key &&(
-                        <div className='absolute top-full right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 w-[250px] z-50'>
+                        <div className='absolute top-full right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 text-gray-500 p-4 w-[250px] z-50'>
                             {/* Adults */}
                             <div className='flex items-center justify-between mb-4'>
                                 <div>
