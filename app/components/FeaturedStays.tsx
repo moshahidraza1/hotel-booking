@@ -1,5 +1,6 @@
 import { ArrowUpRight, Users, Wifi } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const FeaturedStays = () => {
@@ -8,9 +9,10 @@ const FeaturedStays = () => {
       id: 1,
       name: 'The Alpine Loft',
       price: '$240',
-      image: 'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056713/interior-services_ydajle.jpg', // Make sure to add these images to public folder
+      image: 'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056713/interior-services_ydajle.jpg', 
       capacity: '2 Guests',
-      tag: 'Best Seller'
+      tag: 'Best Seller',
+      slug: 'alpine-loft'
     },
     {
       id: 2,
@@ -18,7 +20,8 @@ const FeaturedStays = () => {
       price: '$350',
       image: 'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056590/woodwork-services_wqnbbu.jpg',
       capacity: '4 Guests',
-      tag: 'Trending'
+      tag: 'Trending',
+      slug: 'forest-glass-cabin'
     },
     {
       id: 3,
@@ -26,7 +29,8 @@ const FeaturedStays = () => {
       price: '$420',
       image: 'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764055542/samples/landscapes/nature-mountains.jpg',
       capacity: '6 Guests',
-      tag: 'New'
+      tag: 'New',
+      slug: 'lakeside-retreat'
     }
 ]
   return (
@@ -41,7 +45,7 @@ const FeaturedStays = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20'>
                 {rooms.map((room) => (
-                    <div key={room.id} className='group cursor-pointer'>
+                    <Link key={room.id} href={`/rooms/${room.slug}`} className='group cursor-pointer'>
                         <div className='relative h-100 w-full overflow-hidden rounded-[30px] mb-4'>
                             <Image src={room.image} alt={room.name} fill className='object-cover transition-transform duration-700 group-hover:scale-110'/>
                             <div className='absolute top-4 left-4 bg-white/90 backdrop:-blur-sm px-3 py-1 rounded-full text-black text-xs font-semibold uppercase tracking-wide'>
@@ -65,7 +69,7 @@ const FeaturedStays = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </Link>
                 ))}
 
             </div>
