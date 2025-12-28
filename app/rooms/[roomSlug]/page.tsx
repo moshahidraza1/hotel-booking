@@ -1,6 +1,6 @@
 'use client'
 import { roomsData } from '@/app/utils/roomInfo.utils'
-import { ArrowLeft, ChevronDown, ChevronLeft, ChevronRight, Home, MapPin, Users } from 'lucide-react'
+import { ArrowLeft, ChevronLeft, ChevronRight, Home, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'

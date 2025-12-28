@@ -164,14 +164,34 @@ const BookingPage = () => {
         try {
             await new Promise(resolve => setTimeout(resolve, 2000))
 
-            // TODO: send data to Backend API
-            console.log('Booking Submitted:', {
-                room: room?.name,
-                ...formData,
-                totalPrice: finalTotal,
-                totalNights
-            })
-            // redirect to confirmation page
+            // Demo: Prepare booking data to store 
+        const bookingDataToStore = {
+            roomName: room?.name,
+            location: room?.location,
+            checkIn: formData.checkIn,
+            checkOut: formData.checkOut,
+            totalNights,
+            adults: formData.adults,
+            children: formData.children,
+            totalPrice: finalTotal,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            phone: formData.phone,
+            countryCode: formData.countryCode,
+            specialRequests: formData.specialRequests,
+            paymentMethod: formData.paymentMethod,
+            // Generate a unique booking ID
+            bookingId: Math.random().toString(36).substring(2, 9).toUpperCase()
+        }
+
+        // Store in localStorage
+        localStorage.setItem('bookingData', JSON.stringify(bookingDataToStore))
+
+        // TODO: Send data to backend API
+        console.log('Booking Submitted:', bookingDataToStore)
+
+        // redirect to confirmation page
             router.push('/booking/confirmation')
             
         } catch (error) {
