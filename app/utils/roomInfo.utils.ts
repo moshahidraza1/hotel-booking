@@ -24,9 +24,11 @@ export const roomsData: Room[] = [
     slug: 'alpine-loft',
     price: '$240',
     images: [
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056713/interior-services_ydajle.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056590/woodwork-services_wqnbbu.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764055542/samples/landscapes/nature-mountains.jpg'
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766930262/Alpine-loft-comfort_q6nbgi.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766930458/Alpine-loft-bathroom_nn9seg.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766930558/Alpine-loft-kitchen_t1rbsz.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766930781/Alpine-loft-entertainment_ch5kio.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766930874/Alpine-loft-outdoor_po663k.webp'
     ],
     capacity: '2 Guests',
     tag: 'Best Seller',
@@ -69,9 +71,14 @@ export const roomsData: Room[] = [
     slug: 'forest-glass-cabin',
     price: '$350',
     images: [
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056590/woodwork-services_wqnbbu.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056713/interior-services_ydajle.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764055542/samples/landscapes/nature-mountains.jpg'
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766932338/Forest-glass-cabin-bedroom_qav2s8.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766932439/Forest-glass-cabin-livingArea_fwc1dw.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766935726/Forest-glass-cabin-kitchen_xuzmmq.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766935460/Forest-glass-cabin-technology_peezy5.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766935845/Forest-glass-cabin-wellness_ugbnux.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766936188/Forest-glass-cabin-bathroom_pjkcut.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766936656/Forest-glass-cabin-outdoors_ifwudl.webp'
+
     ],
     capacity: '4 Guests',
     tag: 'Trending',
@@ -114,9 +121,19 @@ export const roomsData: Room[] = [
     slug: 'lakeside-retreat',
     price: '$420',
     images: [
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764055542/samples/landscapes/nature-mountains.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056713/interior-services_ydajle.jpg',
-      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1764056590/woodwork-services_wqnbbu.jpg'
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766936820/Lakeside-retreat-masterBedroom_l1eh5o.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766937128/Lakeside-retreat-guestRoom-1_j9p6z4.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766937606/Lakeside-retreat-guestRoom-2_oiprf3.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766938008/Lakeside-retreat-bunkRoom_vb2f4j.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766938000/Lakeside-retreat-ensuite-bathroom_a13lj7.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766938519/Lakeside-retreate-living-space_kljxoq.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766938657/Lakeside-retreat-kitchen_yseeuo.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766938984/Lakeside-retreat-dining_lw0gzr.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766939055/Lakeside-retreat-recreation-outdoors_mvlrlt.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766939394/Lakeside-retreat-recreation-indoors_zuawey.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766939452/Lakeside-retreat-home-theater_s7fn8n.webp',
+      'https://res.cloudinary.com/ddvhuxa9f/image/upload/v1766939687/Lakeside-retreat-outdoor-shower-and-fire-pit_qdznsr.webp'
+
     ],
     capacity: '6 Guests',
     tag: 'New',
@@ -146,7 +163,7 @@ export const roomsData: Room[] = [
       },
       {
         category: 'Luxury',
-        items: ['Home theater', 'Wine cellar', 'Hot tub', 'Outdoor shower', 'Fire pit']
+        items: ['Home theater', 'Hot tub', 'Outdoor shower', 'Fire pit']
       }
     ],
     location: 'Lakeside',

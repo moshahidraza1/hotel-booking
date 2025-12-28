@@ -45,8 +45,10 @@ const RoomPage = () => {
         <Image src={room.images[currentImageIndex]}
         alt={room.name}
         fill
+        priority
+        unoptimized={true}
         className='object-cover'
-        priority/>
+        />
       
 
       {/* Image Navigation */}
@@ -119,7 +121,7 @@ const RoomPage = () => {
           <h2 className='text-2xl font-bold text-black mb-8'>Ammenities</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {room.amenities.map((category,index) => (
-              <div className='bg-white rounded-2xl p-6 border border-gray-100'>
+              <div key={index} className='bg-white rounded-2xl p-6 border border-gray-100'>
                 <h3 className='font-semibold text-black mb-4'>{category.category}</h3>
                 <ul className='space-y-2'>
                   {category.items.map((item, itemIndex) => (
