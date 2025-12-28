@@ -1,6 +1,6 @@
 'use client'
 import { roomsData } from '@/app/utils/roomInfo.utils'
-import { ArrowLeft, ChevronDown, ChevronRight, Home, MapPin, Users } from 'lucide-react'
+import { ArrowLeft, ChevronDown, ChevronLeft, ChevronRight, Home, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
@@ -53,12 +53,12 @@ const RoomPage = () => {
       <button
       onClick={prevImage}
       className='absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-all'>
-        <ChevronDown size={24}/>
+        <ChevronLeft size={24} className='text-gray-400'/>
       </button>
       <button
       onClick={nextImage}
       className='absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-all'>
-        <ChevronRight size={24} />
+        <ChevronRight size={24} className='text-gray-400'/>
       </button>
 
       {/* Image Indicators */}
