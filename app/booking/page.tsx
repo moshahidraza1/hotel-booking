@@ -251,7 +251,6 @@ const BookingPage = () => {
                     value={formData.checkIn}
                     onChange={(e) => handleInputChange('checkIn', e.target.value)}
                     min={getTodayDate()}
-                    max={getMaxDate(formData.checkIn)}
                     className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-transparent outline-none transition-all ${errors.checkIn ? 'border-red-300' : 'border-gray-300'}`}
                   />
                   {errors.checkIn && <p className='text-red-500 text-sm mt-1'>{errors.checkIn}</p>}
